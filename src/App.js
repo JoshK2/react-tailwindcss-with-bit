@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ProfileCard } from './components/profile-card';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ProfileCard
+        name="Josh Kuttler"
+        description="Software & Web Developer 💫 💻"
+        lables={['Software developer', 'Web developer', 'Open source']}
+        imageLink="https://avatars0.githubusercontent.com/u/35892475?s=460&u=fbddc73a68a4ded57cb84efba874d2fee62626de&v=4"
+      />
     </div>
   );
 }
